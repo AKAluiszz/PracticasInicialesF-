@@ -1,0 +1,21 @@
+---
+const { imageSrc, name, position, description } = Astro.props;
+---
+
+<div class="p-4 bg-gray-800 border border-gray-700 shadow-lg rounded-lg max-w-xs mx-auto">
+  <div class="relative">
+    <!-- Imagen del Miembro -->
+    <img src={imageSrc} alt={name} class="img-400x400 rounded-t-lg" />
+    
+    <div class="absolute top-2 right-2 bg-blue-500 text-white text-xs font-bold px-2 py-1 rounded-full">
+      {position}
+    </div>
+  </div>
+  <div class="mt-4 text-center">
+    <!-- Nombre del Miembro -->
+    <h3 class="text-xl font-semibold text-white">{name}</h3>
+    <!-- Breve Descripción -->
+    <p class="text-gray-300 mt-2">{description}</p>
+  </div>
+</div>
+
