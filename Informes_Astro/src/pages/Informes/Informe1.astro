@@ -1,117 +1,198 @@
 ---
-import LayoutInformes from "../../layouts/LayoutInforme1.astro"
+import LayoutInformes from "../../layouts/LayoutInforme1.astro";
 ---
 
 <LayoutInformes title="Informe 1">
+  <div class="text-center mb-8">
+    <a
+      href="https://drive.google.com/file/d/1vxTfIluNqpAehQ8hQvi0B-Y1rvpSnKSg/view"
+      class="text-blue-400 hover:underline"
+      target="_blank">Descargar Manual</a
+    > |
+    <a
+      href="https://drive.google.com/file/d/1rUF3LKU6LRyhjYf4kHog6wMF8mC8gWbU/view?usp=sharing"
+      class="text-blue-400 hover:underline"
+      target="_blank">Descargar Presentación</a
+    > |
+    <a
+      href="https://drive.google.com/file/d/1NI1upLzgdCKA6VV1_j385IVv1ujxPxrS/view?usp=sharing"
+      class="text-blue-400 hover:underline"
+      target="_blank">Descargar Trifoliar</a
+    >
+  </div>
 
+  <h1 class="text-3xl md:text-4xl font-bold text-white text-center mb-6">
+    Guía Rápida para el Mantenimiento de una Computadora
+  </h1>
 
-    <div class="text-center mb-8">
-        <a href="https://drive.google.com/file/d/1vxTfIluNqpAehQ8hQvi0B-Y1rvpSnKSg/view" class="text-blue-400 hover:underline" target="_blank">Descargar Manual</a> |
-        <a href="https://drive.google.com/file/d/1NI1upLzgdCKA6VV1_j385IVv1ujxPxrS/view?usp=sharing" class="text-blue-400 hover:underline" target="_blank">Descargar Presentación</a> | 
-        <a href="https://drive.google.com/file/d/1NI1upLzgdCKA6VV1_j385IVv1ujxPxrS/view?usp=sharing" class="text-blue-400 hover:underline" target="_blank">Descargar Trifoliar</a>
-      </div>
-
-    <h1 class="text-3xl md:text-4xl font-bold text-white text-center mb-6">
-        Guía Rápida para el Mantenimiento de una Computadora 
-    </h1>
-
-    <div class="container mx-auto px-4 py-6">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div class="p-4 bg-gray-900 border border-gray-700 shadow-lg rounded-lg">
-            <h2 class="text-xl font-semibold text-white mb-4">Limpieza Regular</h2>
-            <ul class="list-disc pl-5 text-gray-300">
-              <li><strong>Exterior</strong>: Limpia el polvo y la suciedad de la carcasa, teclado y pantalla con un paño suave y seco. Usa aire comprimido para eliminar el polvo de las rejillas de ventilación.</li>
-              <li><strong>Interior</strong>: Abre la carcasa (siguiendo las recomendaciones del fabricante) y usa aire comprimido para limpiar los ventiladores y los componentes internos.</li>
-            </ul>
-          </div>
-   
-          <div class="p-4 bg-gray-900 border border-gray-700 shadow-lg rounded-lg">
-            <h2 class="text-xl font-semibold text-white mb-4">Actualizaciones de Software</h2>
-            <ul class="list-disc pl-5 text-gray-300">
-              <li><strong>Sistema Operativo</strong>: Mantén tu sistema operativo actualizado para protegerte contra vulnerabilidades de seguridad y disfrutar de las últimas características.</li>
-              <li><strong>Controladores</strong>: Asegúrate de que todos tus controladores, especialmente los de la tarjeta gráfica y el chipset, estén actualizados.</li>
-            </ul>
-          </div>
-   
-          <div class="p-4 bg-gray-900 border border-gray-700 shadow-lg rounded-lg">
-            <h2 class="text-xl font-semibold text-white mb-4">Seguridad</h2>
-            <ul class="list-disc pl-5 text-gray-300">
-              <li><strong>Antivirus</strong>: Instala y actualiza un programa antivirus confiable para protegerte contra malware y virus.</li>
-              <li><strong>Copia de Seguridad</strong>: Realiza copias de seguridad periódicas de tus datos importantes. Usa servicios en la nube o discos duros externos.</li>
-            </ul>
-          </div>
-   
-          <div class="p-4 bg-gray-900 border border-gray-700 shadow-lg rounded-lg">
-            <h2 class="text-xl font-semibold text-white mb-4">Mantenimiento del Hardware</h2>
-            <ul class="list-disc pl-5 text-gray-300">
-              <li><strong>Verifica el Funcionamiento del Disco Duro</strong>: Usa herramientas de diagnóstico para comprobar el estado de tu disco duro. Si es posible, considera la sustitución si muestra signos de fallo.</li>
-              <li><strong>Revisa la Memoria RAM</strong>: Realiza pruebas de memoria para asegurarte de que no haya errores en la RAM.</li>
-            </ul>
-          </div>
-   
-          <div class="p-4 bg-gray-900 border border-gray-700 shadow-lg rounded-lg">
-            <h2 class="text-xl font-semibold text-white mb-4">Optimización del Sistema</h2>
-            <ul class="list-disc pl-5 text-gray-300">
-              <li><strong>Desfragmentación</strong>: Si usas un disco duro tradicional (HDD), realiza una desfragmentación periódica para mejorar el rendimiento.</li>
-              <li><strong>Administración de Aplicaciones</strong>: Elimina programas y aplicaciones que no uses para liberar espacio en el disco y reducir el tiempo de arranque.</li>
-            </ul>
-          </div>
-   
-          <div class="p-4 bg-gray-900 border border-gray-700 shadow-lg rounded-lg">
-            <h2 class="text-xl font-semibold text-white mb-4">Chequeos de Red</h2>
-            <ul class="list-disc pl-5 text-gray-300">
-              <li><strong>Configuración de Red</strong>: Asegúrate de que tu conexión a Internet esté funcionando correctamente y revisa la configuración del router si experimentas problemas de conexión.</li>
-              <li><strong>Seguridad de la Red</strong>: Cambia las contraseñas de tu red Wi-Fi regularmente y usa cifrado WPA3 si es posible.</li>
-            </ul>
-          </div>
-
-         
-    <div class="p-4 bg-gray-900 border border-gray-700 shadow-lg rounded-lg">
-        <h2 class="text-xl font-semibold text-white mb-4 ">Consejos de Mantenimiento</h2>
-        <ul class="list-disc pl-5 text-gray-300 ">
-          <li><strong>Chequeo de Temperatura</strong>: Mantén la computadora fresca.</li>
-          <li><strong>Revisión de Cables</strong>: Asegúrate de que todos los cables estén conectados correctamente.</li>
+  <div class="container mx-auto px-4 py-6">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="p-4 bg-gray-900 border border-gray-700 shadow-lg rounded-lg">
+        <h2 class="text-xl font-semibold text-white mb-4">Limpieza Regular</h2>
+        <ul class="list-disc pl-5 text-gray-300">
+          <li>
+            <strong>Exterior</strong>: Limpia el polvo y la suciedad de la
+            carcasa, teclado y pantalla con un paño suave y seco. Usa aire
+            comprimido para eliminar el polvo de las rejillas de ventilación.
+          </li>
+          <li>
+            <strong>Interior</strong>: Abre la carcasa (siguiendo las
+            recomendaciones del fabricante) y usa aire comprimido para limpiar
+            los ventiladores y los componentes internos.
+          </li>
         </ul>
       </div>
 
-          <div class="p-4 bg-gray-900 border border-gray-700 shadow-lg rounded-lg">
-            <h2 class="text-xl font-semibold text-white mb-4">Precauciones Adicionales</h2>
-            <ul class="list-disc pl-5 text-gray-300">
-              <li><strong>Uso Adecuado</strong>: Evita comer o beber cerca de tu computadora para prevenir daños accidentales.</li>
-              <li><strong>Protección Contra Sobretensiones</strong>: Usa un protector contra sobretensiones para proteger tu equipo de daños por fluctuaciones de voltaje.</li>
-            </ul>
-          </div>   
-        </div>
+      <div class="p-4 bg-gray-900 border border-gray-700 shadow-lg rounded-lg">
+        <h2 class="text-xl font-semibold text-white mb-4">
+          Actualizaciones de Software
+        </h2>
+        <ul class="list-disc pl-5 text-gray-300">
+          <li>
+            <strong>Sistema Operativo</strong>: Mantén tu sistema operativo
+            actualizado para protegerte contra vulnerabilidades de seguridad y
+            disfrutar de las últimas características.
+          </li>
+          <li>
+            <strong>Controladores</strong>: Asegúrate de que todos tus
+            controladores, especialmente los de la tarjeta gráfica y el chipset,
+            estén actualizados.
+          </li>
+        </ul>
       </div>
 
-      <h1 class="text-3xl md:text-4xl font-bold text-white text-center mb-8">Video Tutorial de Mantenimiento</h1>
+      <div class="p-4 bg-gray-900 border border-gray-700 shadow-lg rounded-lg">
+        <h2 class="text-xl font-semibold text-white mb-4">Seguridad</h2>
+        <ul class="list-disc pl-5 text-gray-300">
+          <li>
+            <strong>Antivirus</strong>: Instala y actualiza un programa
+            antivirus confiable para protegerte contra malware y virus.
+          </li>
+          <li>
+            <strong>Copia de Seguridad</strong>: Realiza copias de seguridad
+            periódicas de tus datos importantes. Usa servicios en la nube o
+            discos duros externos.
+          </li>
+        </ul>
+      </div>
 
-<div class="video-container mx-auto max-w-4xl">
-    <iframe src="https://drive.google.com/file/d/1o48D_niInyDlz485ww-MHErg1Rmjolbx/preview" 
-    width="640" 
-    height="480" 
-    allow="autoplay; fullscreen"   allow="autoplay">
-    </iframe>
-</div>
+      <div class="p-4 bg-gray-900 border border-gray-700 shadow-lg rounded-lg">
+        <h2 class="text-xl font-semibold text-white mb-4">
+          Mantenimiento del Hardware
+        </h2>
+        <ul class="list-disc pl-5 text-gray-300">
+          <li>
+            <strong>Verifica el Funcionamiento del Disco Duro</strong>: Usa
+            herramientas de diagnóstico para comprobar el estado de tu disco
+            duro. Si es posible, considera la sustitución si muestra signos de
+            fallo.
+          </li>
+          <li>
+            <strong>Revisa la Memoria RAM</strong>: Realiza pruebas de memoria
+            para asegurarte de que no haya errores en la RAM.
+          </li>
+        </ul>
+      </div>
 
-<style>
-  .video-container {
-    position: relative;
-    padding-bottom: 56.25%; 
-    height: 0;
-    overflow: hidden;
-    background: #000;
-    border-radius: 0.5rem; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
-    margin-top: 2rem; 
-  }
+      <div class="p-4 bg-gray-900 border border-gray-700 shadow-lg rounded-lg">
+        <h2 class="text-xl font-semibold text-white mb-4">
+          Optimización del Sistema
+        </h2>
+        <ul class="list-disc pl-5 text-gray-300">
+          <li>
+            <strong>Desfragmentación</strong>: Si usas un disco duro tradicional
+            (HDD), realiza una desfragmentación periódica para mejorar el
+            rendimiento.
+          </li>
+          <li>
+            <strong>Administración de Aplicaciones</strong>: Elimina programas y
+            aplicaciones que no uses para liberar espacio en el disco y reducir
+            el tiempo de arranque.
+          </li>
+        </ul>
+      </div>
 
-  .video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: none; 
-  }
-</style>
+      <div class="p-4 bg-gray-900 border border-gray-700 shadow-lg rounded-lg">
+        <h2 class="text-xl font-semibold text-white mb-4">Chequeos de Red</h2>
+        <ul class="list-disc pl-5 text-gray-300">
+          <li>
+            <strong>Configuración de Red</strong>: Asegúrate de que tu conexión
+            a Internet esté funcionando correctamente y revisa la configuración
+            del router si experimentas problemas de conexión.
+          </li>
+          <li>
+            <strong>Seguridad de la Red</strong>: Cambia las contraseñas de tu
+            red Wi-Fi regularmente y usa cifrado WPA3 si es posible.
+          </li>
+        </ul>
+      </div>
+
+      <div class="p-4 bg-gray-900 border border-gray-700 shadow-lg rounded-lg">
+        <h2 class="text-xl font-semibold text-white mb-4">
+          Consejos de Mantenimiento
+        </h2>
+        <ul class="list-disc pl-5 text-gray-300">
+          <li>
+            <strong>Chequeo de Temperatura</strong>: Mantén la computadora
+            fresca.
+          </li>
+          <li>
+            <strong>Revisión de Cables</strong>: Asegúrate de que todos los
+            cables estén conectados correctamente.
+          </li>
+        </ul>
+      </div>
+
+      <div class="p-4 bg-gray-900 border border-gray-700 shadow-lg rounded-lg">
+        <h2 class="text-xl font-semibold text-white mb-4">
+          Precauciones Adicionales
+        </h2>
+        <ul class="list-disc pl-5 text-gray-300">
+          <li>
+            <strong>Uso Adecuado</strong>: Evita comer o beber cerca de tu
+            computadora para prevenir daños accidentales.
+          </li>
+          <li>
+            <strong>Protección Contra Sobretensiones</strong>: Usa un protector
+            contra sobretensiones para proteger tu equipo de daños por
+            fluctuaciones de voltaje.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <h1 class="text-3xl md:text-4xl font-bold text-white text-center mb-8">
+    Video Tutorial de Mantenimiento
+  </h1>
+
+  <div class="video-container mx-auto max-w-4xl">
+    <iframe
+      src="https://drive.google.com/file/d/1cOjCfxvxCVN1ZrYn9tshWNG1LDvGNcrH/preview"
+      width="640"
+      height="480"
+      allow="autoplay"></iframe>
+  </div>
+
+  <style>
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      background: #000;
+      border-radius: 0.5rem;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+      margin-top: 2rem;
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style></LayoutInformes
+>
