@@ -3,6 +3,7 @@ interface Props { //typescript
 	title: string;
 }
 import Header from '../components/Header.astro';
+import HeaderInforme2 from '../components/HeaderInforme2.astro';
 const { title } = Astro.props;
 ---
 
@@ -18,7 +19,8 @@ const { title } = Astro.props;
 	</head>
 	<body class="bg-white-21 min-h-screen pb-32">
 		<main class="max-w-5xl px-4 m-auto">
-			<Header/>
+			<HeaderInforme2/>
+          
 		<slot />
 	</main>
 	</body>
