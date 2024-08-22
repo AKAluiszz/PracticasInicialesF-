@@ -4,8 +4,6 @@ import HeaderButton from "./HeaderButton.astro";
 console.log("Javascript");
 ---
 
-
-
 <nav
   class="flex flex-col items-center w-full text-left md:flex-row md:items-start md:justify-start"
 >
@@ -27,7 +25,7 @@ console.log("Javascript");
       ></path>
     </svg>
     <span>Home</span>
- 
+  </HeaderButton>
 </nav>
 
 <header class="py-6 px-4 mx-auto max-w-xl lg:py-12 lg:px-6">
@@ -54,22 +52,33 @@ console.log("Javascript");
     </p>
   </div>
 
-  <p class="font-light text-white sm:text-sm dark:text-white text-center">
-    Capacitar al estudiante en el uso completo y efectivo del sistema operativo
-    Linux, proporcionándole los conocimientos y habilidades necesarios para
-    administrar y personalizar su entorno de trabajo, así como para realizar
-    tareas básicas y avanzadas en este sistema operativo.
-  </p>
+  <div class="text-center mt-8 mb-2">
+    <h2 class="text-lg font-bold">Facultad de Ingeniería</h2>
+    <p class="text-md">Escuela de Sistemas</p>
+    <p class="text-md">Universidad de San Carlos de Guatemala (USAC)</p>
+  </div>
 
-  
+  <p class="font-light text-white sm:text-sm dark:text-white text-center">
+    El objetivo de este taller/informe es capacitar al estudiante en el uso
+    completo y efectivo del sistema operativo Linux, proporcionándole los
+    conocimientos y habilidades necesarios para administrar y personalizar su
+    entorno de trabajo, así como para realizar tareas básicas y avanzadas en
+    este sistema operativo.
+  </p>
 </header>
 
-
-<nav class="flex justify-center w-full py-4 -mt-12">
-    <a href="../Informe2/Video1" class="text-white bg-blue-500 hover:bg-blue-600 rounded p-2 mx-2">
-      Video 1
-    </a>
-    <a href="../Informe2/Video2" class="text-white bg-blue-500 hover:bg-blue-600 rounded p-2 mx-2">
-      Video 2
-    </a>
-  </nav>
+<!-- Sección del segundo nav organizada -->
+<nav class="flex justify-center w-full py-4 mt-8">
+  <a
+    href="../Informe2/Video1"
+    class="text-white bg-blue-500 hover:bg-blue-600 rounded p-2 mx-2"
+  >
+    Video 1
+  </a>
+  <a
+    href="../Informe2/Video2"
+    class="text-white bg-blue-500 hover:bg-blue-600 rounded p-2 mx-2"
+  >
+    Video 2
+  </a>
+</nav>
