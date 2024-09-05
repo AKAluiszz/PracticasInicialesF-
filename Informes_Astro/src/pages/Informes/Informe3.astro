@@ -1,0 +1,57 @@
+---
+import LayoutInforme2 from "../../layouts/LayoutInforme3.astro";
+---
+
+<LayoutInforme2 title="Informe 3">
+  <div class="text-center mb-8">
+    <a
+      href="https://drive.google.com/file/d/1qe3JM-JG3bXWOHdWuR2QBcoqhyVZnKD8/view?usp=drive_link"
+      class="text-blue-400 hover:underline"
+      target="_blank">Descargar Manual Uso Docker</a
+    > |
+    <a
+      href="https://hub.docker.com/"
+      class="text-blue-400 hover:underline"
+      target="_blank">Docker Hub</a
+    > |
+    <a
+      href="https://hub.docker.com/r/akaluis/prueba/tags"
+      class="text-blue-400 hover:underline"
+      target="_blank">Repositorio Docker</a
+    >
+  </div>
+
+  <h1 class="text-3xl md:text-4xl font-bold text-white text-center mb-8">
+    Video Tutorial uso de Docker
+  </h1>
+
+  <div class="video-container mx-auto max-w-4xl">
+    <iframe
+      src="https://drive.google.com/file/d/1WOGslXuaop2c0A9jzyhL56YOSogzqYjj/preview"
+      width="640"
+      height="480"
+      allow="autoplay"></iframe>
+  </div>
+
+  <style>
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      background: #000;
+      border-radius: 0.5rem;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+      margin-top: 2rem;
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</LayoutInforme2>
